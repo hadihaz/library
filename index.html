@@ -10,13 +10,13 @@
 <body>
     <div class="modal">
         <div class="form_area">
-            <form action="">
+            <form id="form" action="">
                 <h2>Add new book</h2>
-                <input type="text" name="title" id="title" placeholder="title">
-                <input type="text" name="author" id="author" placeholder="author">
-                <input type="number" name="pages" id="pages" placeholder="pages">
+                <input type="text" name="title" id="title" placeholder="title" required>
+                <input type="text" name="author" id="author" placeholder="author" required>
+                <input type="number" name="pages" id="pages" placeholder="pages" required min="0">
                 <div class="toggle">
-                    <input type="radio" id="choice1" name="choice" value="Read">
+                    <input type="radio" id="choice1" name="choice" value="Read" checked>
                     <label for="choice1" class="radio choice1">Read</label>
 
                     <input type="radio" id="choice2" name="choice" value="NotRead">
