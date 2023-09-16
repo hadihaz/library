@@ -1,7 +1,7 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: grid;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 9fr;
     margin: 0;
 }
 
@@ -11,6 +11,13 @@ body {
     color: white;
     text-align: center;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
 }
 
 .main {
@@ -19,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 18px;
+    padding: 18px 0px;
 }
 
 .addBook {
@@ -33,18 +40,21 @@ body {
     margin: 20px;
 }
 
-.addBook:hover {
+/* .addBook:hover {
     background-color: rgb(45, 44, 44);
 }
 
 .addBook:active {
     background-color: rgb(24, 24, 24);
+} */
+.addBook:hover {
+    filter: brightness(90%);
 }
 
 .books {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     padding: 15px;
     gap: 15px;
 }
@@ -87,7 +97,8 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.read{
+
+.read {
     background-color: rgba(90, 211, 90, 0.2);
     padding: 15px 0px;
     margin: 0;
@@ -97,14 +108,16 @@ body {
     font-size: 20px;
 
 }
-.read:hover {
+
+/* .read:hover {
     background-color: rgba(90, 211, 90, 0.797);
-}
+} */
 
 .read:active {
     background-color: rgba(90, 211, 90, 0.485);
 }
-.notRead{
+
+.notRead {
     background-color: rgba(225, 62, 62, 0.2);
     padding: 15px 0px;
     margin: 0;
@@ -114,19 +127,21 @@ body {
     font-size: 20px;
 
 }
-.notRead:hover {
+
+/* .notRead:hover {
     background-color: rgba(225, 62, 62, 0.81);
-}
+} */
 
 .notRead:active {
     background-color: rgba(225, 62, 62, 0.568);
 }
-.isRead{
+
+.isRead {
     background-color: rgb(90, 211, 90);
 
 }
 
-.isNotRead{
+.isNotRead {
     background-color: rgb(225, 62, 62);
 
 }
@@ -137,11 +152,12 @@ body {
     padding: 15px;
     border: none;
     border-radius: 15px;
-    margin-top:15px ;
+    margin-top: 15px;
 }
-.remove:hover {
+
+/* .remove:hover {
     background-color: rgba(195, 52, 52, 0.81);
-}
+} */
 
 .remove:active {
     background-color: rgba(184, 48, 48, 0.568);
