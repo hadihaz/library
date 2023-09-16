@@ -1,7 +1,7 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: grid;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 1fr 8fr;
     margin: 0;
 }
 
@@ -14,10 +14,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.header h1 {
-    margin: 0;
 }
 
 .main {
@@ -40,15 +36,12 @@ body {
     margin: 20px;
 }
 
-/* .addBook:hover {
+.addBook:hover {
     background-color: rgb(45, 44, 44);
 }
 
 .addBook:active {
     background-color: rgb(24, 24, 24);
-} */
-.addBook:hover {
-    filter: brightness(90%);
 }
 
 .books {
@@ -109,9 +102,9 @@ body {
 
 }
 
-/* .read:hover {
+.read:hover {
     background-color: rgba(90, 211, 90, 0.797);
-} */
+}
 
 .read:active {
     background-color: rgba(90, 211, 90, 0.485);
@@ -125,12 +118,11 @@ body {
     border-radius: 0px 15px 15px 0px;
     width: 50%;
     font-size: 20px;
-
 }
 
-/* .notRead:hover {
+.notRead:hover {
     background-color: rgba(225, 62, 62, 0.81);
-} */
+}
 
 .notRead:active {
     background-color: rgba(225, 62, 62, 0.568);
@@ -155,10 +147,89 @@ body {
     margin-top: 15px;
 }
 
-/* .remove:hover {
+.remove:hover {
     background-color: rgba(195, 52, 52, 0.81);
-} */
+}
 
 .remove:active {
     background-color: rgba(184, 48, 48, 0.568);
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.503);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_area {
+    background-color: rgb(45, 44, 44);
+    width: 250px;
+    height: 320px;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    width: 90%;
+    height: 35px;
+    color: white;
+    background-color: rgb(52, 50, 50);
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.toggle>input[type="radio"] {
+    display: none;
+}
+
+.toggle>#choice1:checked~.choice1 {
+    background-color: rgba(90, 211, 90, 0.6);
+    border-radius: 35px 0px 0px 35px;
+}
+
+.toggle>#choice2:checked~.choice2 {
+    background-color: rgba(225, 62, 62, 0.6);
+    border-radius: 0px 35px 35px 0px;
+}
+
+.toggle>label {
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: rgb(52, 50, 50);
+}
+.choice1{
+    width:80px;
+    border-radius: 35px 0px 0px 35px;
+    border: solid 3px rgb(90, 211, 90);
+}
+.choice2{
+    width: 80px;
+    border-radius: 0px 35px 35px 0px;
+    border: solid 3px rgb(225, 62, 62);
+}
+.submit:active{
+    background-color: rgb(90, 211, 90);
+}
+
+
+.modal{
+    display: none;
 }

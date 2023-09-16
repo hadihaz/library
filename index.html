@@ -8,6 +8,25 @@
 </head>
 
 <body>
+    <div class="modal">
+        <div class="form_area">
+            <form action="">
+                <h2>Add new book</h2>
+                <input type="text" name="title" id="title" placeholder="title">
+                <input type="text" name="author" id="author" placeholder="author">
+                <input type="number" name="pages" id="pages" placeholder="pages">
+                <div class="toggle">
+                    <input type="radio" id="choice1" name="choice" value="Read">
+                    <label for="choice1" class="radio choice1">Read</label>
+
+                    <input type="radio" id="choice2" name="choice" value="NotRead">
+                    <label for="choice2" class="radio choice2">Not Read</label>
+                </div>
+                <input class="submit" type="submit" value="submit">
+            </form>
+
+        </div>
+    </div>
     <div class="header">
         <h1>Library</h1>
     </div>
@@ -124,7 +143,7 @@
                 </div>
                 <button class="remove">remove</button>
             </div>
-            
+
         </div>
     </div>
 
