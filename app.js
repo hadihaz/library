@@ -20,14 +20,26 @@ console.log(myLibrary);
 const modal = document.querySelector(".modal")
 const submit = document.querySelector(".submit")
 const addBook = document.querySelector(".addBook")
+const form = document.querySelector("#form")
 
-submit.addEventListener('click', (e) => {
-    modal.style.display='none';
-    e.preventDefault();
-})
+
 addBook.addEventListener('click', (e) => {
-    modal.style.display='flex';
+    modal.style.display = 'flex';
     e.preventDefault();
 })
+
+form.onsubmit = (e) => {
+    e.preventDefault()
+    modal.style.display = 'none';
+    const title = document.getElementById('title').value
+    const author = document.getElementById('author').value
+    const pages = document.getElementById('pages').value
+    const isRead = document.getElementById('choice1').checked
+    const Read = document.getElementById('choice2').checked
+    console.log(title, author, pages, isRead, Read);
+    form.reset()
+}
+
+
 
 
