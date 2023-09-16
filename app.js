@@ -14,6 +14,20 @@ function addBookToLibrary() {
     myLibrary.push(newbook)
 }
 
-
 console.log(myLibrary);
+
+
+const modal = document.querySelector(".modal")
+const submit = document.querySelector(".submit")
+const addBook = document.querySelector(".addBook")
+
+submit.addEventListener('click', (e) => {
+    modal.style.display='none';
+    e.preventDefault();
+})
+addBook.addEventListener('click', (e) => {
+    modal.style.display='flex';
+    e.preventDefault();
+})
+
 
