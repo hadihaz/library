@@ -21,6 +21,7 @@ const modal = document.querySelector(".modal")
 const submit = document.querySelector(".submit")
 const addBook = document.querySelector(".addBook")
 const form = document.querySelector("#form")
+const exit = document.querySelector(".exit")
 
 
 addBook.addEventListener('click', (e) => {
@@ -39,6 +40,11 @@ form.onsubmit = (e) => {
     console.log(title, author, pages, isRead, Read);
     form.reset()
 }
+exit.addEventListener('click',(e)=>{
+    modal.style.display = 'none';   
+    e.preventDefault();
+
+})
 
 
 

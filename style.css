@@ -161,8 +161,17 @@ body {
     background-color: rgba(0, 0, 0, 0.503);
     position: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.exit{
+    font-size: 96px;
+    color: rgba(255, 255, 255, 0.503);
+    justify-self: start;
+    align-self: end;
+    padding-right: 50px;
 }
 
 .form_area {
@@ -172,6 +181,8 @@ body {
     border-radius: 15px;
     color: white;
     padding: 20px;
+    justify-self: center;
+    align-self: center;
 }
 
 form {
