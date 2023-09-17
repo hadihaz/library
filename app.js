@@ -99,8 +99,6 @@ function bookUi(book) {
 function updateUi(book) {
     const books = document.querySelector('.books')
     books.appendChild(bookUi(book))
-    console.log(book);
-
 }
 
 function createUi() {
