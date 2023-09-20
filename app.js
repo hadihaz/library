@@ -1,7 +1,5 @@
 let myLibrary = [];
 let bookID = 1;
-
-
 class Book {
     constructor(title, author, pages, read, bookID) {
         this.title = title;
